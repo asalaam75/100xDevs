@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5; /* better readability */
+  -webkit-text-size-adjust: 100%; /* prevent font scaling on mobile */
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* inherit font styles */
+}
+
+a {
+  text-decoration: underline grey;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 20px 10px;
+    box-shadow: 0px 1px 14px -8px;
+}
+
+#header-div{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+}
+
+main{
+    flex: 1;
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#left-header{
+    display: flex;
+    gap: 10px;
+    color: rgb(23, 23, 102);
+    align-items: center;
+}
+
+#left-header p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#left-header span{
+    color: red;
+}
+
+#right-header{
+    display: flex;
+    gap: 10px;
+}
+
+#right-header div{
+    position: relative;
+}
+
+#right-header svg{
+    position: absolute;
+    left: 5px;
+    top: 20%;
+    color: grey;
+}
+
+#right-header input{
+    width: 100%;
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+#profile-pic-div{
+    border-radius: 30px;
+}
+
+#profile-pic-div img{
+    height: 40px;
+    border-radius: 40px;
+}
+
+#main-top{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#main-top-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    color: rgb(2, 2, 71);
+}
+
+#joiner-div{
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px dashed grey;
+    width: fit-content;
+}
+
+#round-div{
+    background-color: #10b0a7;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+}
+
+#main-top-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#main-top-left h2{
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+#main-top-left p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#main-top-left-buttons{
+    display: flex;
+    gap:20px
+}
+
+#main-top-left-buttons button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(2, 2, 71);
+    border-radius: 10px;
+}
+
+#right-button button{
+    background-color: rgb(2, 2, 71);
+    color: white;
+    font-weight: 500;
+}
+
+#main-bottom-one{
+    padding: 32px;
+    background-color: rgb(2, 2, 71);
+    border-radius: 10px 150px 10px 10px;
+    color: white;
+}
+
+#main-bottom-one-inner{
+    padding: 16px;
+    display: flex;
+}
+
+#main-bottom-one-inner > div{
+    display: flex;
+    gap:15px;
+    padding: 20px;
+    align-items: center;
+}
+
+.main-bottom-one-inner-svg{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 12px;
+    background-color: rgb(86, 86, 181);
+    padding: 10px;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+#middle-div{
+    border-right: 2px solid rgb(86, 86, 181);
+    border-left: 2px solid rgb(86, 86, 181);
+}
+
+.grey{
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.big-text{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: rgb(218, 226, 232);
+}
+
+
+#main-bottom{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main-bottom-two{
+    display: flex;
+    gap: 20px;
+}
+
+#main-bottom-two-left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: #1ad0ac;
+    color: white;
+    border-radius: 10px 50px;
+    padding: 20px;
+    gap: 10px;
+}
+
+#main-bottom-two-left-top h3{
+    font-size: 2rem;
+}
+
+#main-bottom-two-left-top p{
+    font-size: 1.05rem;
+}
+
+#main-bottom-two-left-bottom > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#main-bottom-two-left-bottom > div > div{
+    background-color: white;
+    color: #1ad0ac;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 200;
+}
+
+#main-bottom-two-right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2, 2, 71);
+    color: white;
+    border-radius: 10px 50px;
+    padding: 20px;
+    gap: 10px;
+}
+
+#main-bottom-two-right-top{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+
+#main-bottom-two-right-bottom{
+    font-size: 1.05rem;
+}
